@@ -6,8 +6,8 @@ import fetch from 'node-fetch';
 var argv = minimist(process.argv.slice(2));
 // const timezone = moment_timezone.tz.guess()
 
-const latitude = parseFloat(argv.n || argv.s || 35.92)
-const longitude = parseFloat(argv.w || argv.e || 79.05)
+const latitude = parseFloat(argv.n || -argv.s || 35.92)
+const longitude = parseFloat(-argv.w || argv.e || 79.05)
 const timezone = argv.z || "America/New_York"
 
 var day = ""
