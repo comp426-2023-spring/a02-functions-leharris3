@@ -18,6 +18,10 @@ if (days == 0) {
   day = "tomorrow."
 }
 
+if ((argv.n && argv.s) || (argv.e && argv.w)) {
+  process.exit(1) // Illegal Args
+}
+
 async function getWeather() { 
   let response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + latitude + '&longitude=' + longitude + '&daily=weathercode,temperature_2m_max,precipitation_hours,windspeed_10m_max,winddirection_10m_dominant&timezone=' + timezone);
   let data = await response.json()
@@ -30,7 +34,6 @@ async function getWeather() {
   }
   return data;
 }
-
 
 if (argv.h){
     console.log(`Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME_ZONE
