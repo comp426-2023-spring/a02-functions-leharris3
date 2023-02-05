@@ -22,6 +22,7 @@
   "homepage": "https://github.com/comp426-2022-fall/a02-leharris3",
   "dependencies": {
     "minimist": "^1.2.7",
-    "moment-timezone": "^0.5.40"
+    "moment-timezone": "^0.5.40",
+    "node-fetch": "^3.3.0"
   }
 }
