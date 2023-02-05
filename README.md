@@ -4,7 +4,7 @@ This assignment will help you learn to create an installable Node.js command lin
 
 ## DO NOT CLONE THIS REPOSITORY DIRECTLY
 
-Use the GitHub classroom link instead: https://classroom.github.com/a/wjfhBtVG
+Use the GitHub classroom link instead: https://classroom.github.com/a/BWDG9CJ7
 
 **_If you clone this repo directly, it will not be added to the organization as an individual repo associated with your account and you will not be able to push to it._**
 
@@ -39,7 +39,7 @@ Your command line app should be able to do the following:
 1. The package should be installable using NPM (i.e., `npm link` should install it on the runner). 
 2. Invoking `galosh.js` on the command line after running `npm link` should run the app.
 3. `galosh.js -h` should echo the help message (see below) onto STDOUT and exit 0.
-4. `galosh.js -j` should echo the JSON that your app ingested from Open-Meteo onto STDOUT and exit 0. If you do not pass further parameters, this should return an error from the API. There should be no default input for the location variables.
+4. `galosh.js -j` should echo the JSON that your app ingested from Open-Meteo onto STDOUT and exit 0. 
 5. All of the options in the help message below should work. 
 6. If the daily precipitation hours in the JSON for the day you are targeting is not 0, log "You might need your galoshes " onto STDOUT. If the value is zero, then log "You will not need your galoshes " onto STDOUT.
 7. If `-d 0` then log "today." onto STDOUT. If `-d [2-6]` then log "in NUMBER days." onto STDOUT. If `-d 1` or there is no `-d` specified, then log "tomorrow." onto STDOUT.
@@ -258,9 +258,9 @@ Make sure that your code works by doing the following:
 
 1. `npm link` (should link/install your package locally)
 2. `npm test` (should run your test script defined in package.json)
-3. `node cli.js -n 35 -w 79 -z America/New_York -d 0` (should return today's weather)
-4. `galosh.js -n 35 -w 79 -z America/New_York -d 0` (should return the same as above)
-5. `galosh.js -n 35 -w 79 -z America/New_York` (should return tomorrow's weather by default)
+3. `node cli.js -n 35 -w 79 -t America/New_York -d 0` (should return today's weather)
+4. `galosh.js -n 35 -w 79 -t America/New_York -d 0` (should return the same as above)
+5. `galosh.js -n 35 -w 79 -t America/New_York` (should return tomorrow's weather by default)
 6. `galosh.js -n 35 -w 79` (should return tomorrow's weather by default and get the timezone from the system)
 7. `galosh.js -h` (should return help message and exit 0)
 8. `galosh.js -j` (should return JSON and exit)

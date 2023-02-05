@@ -11,21 +11,21 @@
       "points": null
     },
     {
-      "name": "npm test",
-      "setup": "npm install",
-      "run": "npm test",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 5000
-    },
-    {
       "name": "npm link",
       "setup": "",
       "run": "npm link",
       "input": "",
       "output": "found 0 vulnerabilities",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5000
+    },
+    {
+      "name": "npm test",
+      "setup": "npm install",
+      "run": "npm test",
+      "input": "",
+      "output": "",
       "comparison": "included",
       "timeout": 10,
       "points": 5000

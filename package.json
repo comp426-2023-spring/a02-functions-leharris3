@@ -1,0 +1,27 @@
+{
+  "name": "websever",
+  "version": "1.0.0",
+  "description": "weather api fetcher",
+  "main": "cli.js",
+  "bin": {
+    "galosh.js": "./cli.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
+  },
+  "repository": {
+    "type": "module",
+    "url": "https://github.com/comp426-2022-fall/a02-leharris3"
+  },
+  "author": "leharris3",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-fall/a02-leharris3"
+  },
+  "homepage": "https://github.com/comp426-2022-fall/a02-leharris3",
+  "dependencies": {
+    "minimist": "^1.2.7",
+    "moment-timezone": "^0.5.40"
+  }
+}
