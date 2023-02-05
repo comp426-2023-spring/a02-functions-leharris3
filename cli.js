@@ -6,8 +6,8 @@ import fetch from 'node-fetch';
 var argv = minimist(process.argv.slice(2));
 // const timezone = moment_timezone.tz.guess()
 
-const latitude = argv.n || argv.s
-const longitude = argv.w || argv.e
+const latitude = parseFloat(argv.n || argv.s || 35.92)
+const longitude = parseFloat(argv.w || argv.e || 79.05)
 const timezone = argv.z || "America/New_York"
 
 var day = ""
@@ -41,7 +41,7 @@ async function getWeather() {
     console.log("You probably won't need your galoshes " + day);
   
   }
-  
+
   return data;
 }
 
