@@ -1,6 +1,8 @@
 #!/usr/bin/env node
+import minimist from 'minimist';
+import moment from 'moment-timezone';
 
-var argv = require('minimist')(process.argv.slice(2));
+var argv = minimist(process.argv.slice(2));
 // const timezone = moment_timezone.tz.guess()
 
 const latitude = argv.n || argv.s
