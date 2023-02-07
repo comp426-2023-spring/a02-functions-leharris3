@@ -11,16 +11,6 @@
       "points": null
     },
     {
-      "name": "npm link",
-      "setup": "",
-      "run": "npm link",
-      "input": "",
-      "output": "found 0 vulnerabilities",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 5000
-    },
-    {
       "name": "npm test",
       "setup": "npm install",
       "run": "npm test",
@@ -31,9 +21,19 @@
       "points": 5000
     },
     {
+      "name": "npm link",
+      "setup": "",
+      "run": "npm link",
+      "input": "",
+      "output": "found 0 vulnerabilities",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5000
+    },
+    {
       "name": "Today weather",
       "setup": "",
-      "run": "node cli.js -n 35 -w 79 -t America/New_York -d 0",
+      "run": "node cli.js -n 35 -w 79 -z America/New_York -d 0",
       "input": "",
       "output": "today",
       "comparison": "included",
@@ -43,7 +43,7 @@
     {
       "name": "galosh.js today",
       "setup": "npm link",
-      "run": "galosh.js -n 35 -w 79 -t America/New_York -d 0",
+      "run": "galosh.js -n 35 -w 79 -z America/New_York -d 0",
       "input": "",
       "output": "today",
       "comparison": "included",
@@ -53,7 +53,7 @@
     {
       "name": "galosh.js tomorrow",
       "setup": "npm link",
-      "run": "galosh.js -n 35 -w 79 -t America/New_York",
+      "run": "galosh.js -n 35 -w 79 -z America/New_York",
       "input": "",
       "output": "tomorrow",
       "comparison": "included",
